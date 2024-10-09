@@ -23,7 +23,20 @@ body {
   color: #f3e7d4;
 }
 
-
+.logo {
+  display: flex;
+  justify-content: space-evenly;
+  text-decoration: none;
+  color: #ddd6cb;
+  height: 50px;
+  width: 50px;
+  align-items: center;
+  border-radius: 50%;
+  background: #54595f;
+  font-family: 'Anton', "Roboto", "Helvetica", "Times New Roman", ui-serif, serif;
+  letter-spacing: 0.15rem;
+  font-size: 1rem;
+}
 
 @layer base {
   h1 {
@@ -47,21 +60,6 @@ body {
 }
 
 @layer utilities {
-  
-  .logo {
-    display: flex;
-    justify-content: space-evenly;
-    text-decoration: none;
-    color: #ddd6cb;
-    height: 50px;
-    width: 50px;
-    align-items: center;
-    border-radius: 50%;
-    background: #54595f;
-    font-family: 'Anton', "Roboto", "Helvetica", "Times New Roman", ui-serif, serif;
-    letter-spacing: 0.15rem;
-    font-size: 1rem;
-  }
 
   .header {
     @apply flex justify-between items-center sm:px-16 px-8 py-4 max-w-5xl mx-auto absolute top-0 bg-transparent z-10 right-0 left-0;
