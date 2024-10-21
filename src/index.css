@@ -113,7 +113,7 @@ body {
   .about_title h3 {
     font-family: "Poppins";
     font-weight: bold;
-    @apply pb-2 text-base sm:text-sm md:text-lg lg:text-xl text-center sm:text-left tracking-widest sm:tracking-[.15em];
+    @apply pb-2 text-base sm:text-sm md:text-lg lg:text-xl text-center sm:text-left tracking-widest sm:tracking-[.13em];
   }
 
 

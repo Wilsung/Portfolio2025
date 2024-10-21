@@ -19,7 +19,7 @@ export default function AboutMePage() {
         <p>Here are some relevant technologies I have experience with:</p>
       </div>
 
-      <div className="w-full md:w-11/12 bg-[#131f24] mx-auto p-2 sm:p-4 lg:p-6 text-xd sm:text-sm md:text-base lg:text-lg">
+      <div className="w-full bg-[#131f24] mx-auto p-2 sm:p-4 lg:p-6 text-xd sm:text-sm md:text-base lg:text-lg">
         <div className="flex sm:flex-row flex-col items-baseline justify-around *:w-full *:sm:w-auto about_title">
           {aboutme.length > 0 &&
             aboutme.map((skill) => (
