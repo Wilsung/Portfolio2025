@@ -9,11 +9,12 @@ export default function AboutMePage() {
       <hr />
       <div className="py-8 space-y-4 md:space-y-6">
         <p>
-          Front-End Web Developer with over 5 years of working experience.
-          Always learning and fueled by challenges that expand my knowledge. I
-          enjoy the process of developing a website or application and seeing it
-          come to fruition. When I'm not on the computer, I like to spend my
-          time listening to music or keeping fit at the Pickleball courts.
+        Detail-oriented and self-driven Web Developer with 5+ years of experience 
+        building user-facing applications. Collaborative team player with excellent 
+        communication skills and ability to work with a team to develop and launch 
+        responsive web applications. When I'm not on the computer, I like to spend 
+        my time listening to music or keeping fit at the Pickleball courts.
+
         </p>
         <p>Here are some relevant technologies I have experience with:</p>
       </div>
@@ -34,11 +35,11 @@ export default function AboutMePage() {
 
       <div className="flex justify-center gap-8 text-2xl py-10">
         <a
-          href="https://www.linkedin.com/in/wilson-ung-34962a78/"
+          href="https://www.linkedin.com/in/wilsung/"
           rel="noopener noreferrer"
           target="_blank"
         >
-          <i className="fa-brands fa-linkedin fa-xl" aria-hidden="true" />
+          <i className="fa-brands fa-linkedin fa-xl hover:text-cyan-400" aria-hidden="true" />
         </a>
 
         <a
@@ -46,10 +47,10 @@ export default function AboutMePage() {
           rel="noopener noreferrer"
           target="_blank"
         >
-          <i className="fa-brands fa-github fa-xl" aria-hidden="true" />
+          <i className="fa-brands fa-github fa-xl hover:text-cyan-500" aria-hidden="true" />
         </a>
 
-        <a
+        {/* <a
           href="https://codepen.io/lolwilson94/pens/public"
           rel="noopener noreferrer"
           target="_blank"
@@ -63,7 +64,7 @@ export default function AboutMePage() {
           target="_blank"
         >
           <i className="fa-brands fa-free-code-camp fa-xl" aria-hidden="true" />
-        </a>
+        </a> */}
       </div>
     </section>
   );

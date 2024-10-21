@@ -1,18 +1,34 @@
 import githubBattle from "./assets/gh-battle.jpg";
 import hackerNews from "./assets/hackernews.jpg";
 import foodApp from "./assets/foodApp.jpg";
+import techHaven from "./assets/techhaven.jpg";
 
 export default [
+  {
+    name: "Tech Haven E-Commerce Store (GitHub)",
+    src: techHaven,
+    alt: "Food ordering application.",
+    description:
+      "Fully functional E-Commerce web application utilizing Payload CMS for the Admin Dashboard and Stripe's API for payment processing.",
+    stack: [
+      "Full stack application",
+      "Payload CMS",
+      "Next.JS",
+      "MongoDB",
+      "JavaScript",
+      "Stripe API",
+      "React",
+    ],
+    link: "https://github.com/Wilsung/eCommerce",
+  },
   {
     name: "Food Ordering Demo",
     src: foodApp,
     alt: "Food ordering application.",
     description:
       "A Full-Stack food ordering application connected with Firebase's backend to fetch images and store customer order information.",
-    technologies:
-      "Technologies: Fullstack application, Firebase Backend Database. HTML, CSS, JavaScript, React, React Hooks, React Router. Deployed with Netlify.",
     stack: [
-      "Fullstack application",
+      "Full stack application",
       "Firebase Backend Database",
       "JavaScript",
       "React",
