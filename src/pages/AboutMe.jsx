@@ -4,7 +4,7 @@ import aboutme from "../aboutme";
 
 export default function AboutMePage() {
   return (
-    <section>
+    <section className="spacing">
       <h1 className="title">About Me</h1>
       <hr />
       <div className="py-8 space-y-4 md:space-y-6">

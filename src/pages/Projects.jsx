@@ -3,10 +3,10 @@ import Project from "../components/Project.jsx";
 
 export default function ProjectsPage() {
   return (
-    <section>
+    <section className="spacing">
       <h1 className="title">Projects</h1>
       <hr />
-      <div>
+      <div className="py-8 space-y-4 md:space-y-6">
         <ul>
           {project_list.map((project) => (
             <li key={project.name}>

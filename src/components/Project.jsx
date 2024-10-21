@@ -1,6 +1,6 @@
 export default function Project({ title, description, src, stack, link, alt }) {
   return (
-    <article className="flex md:flex-row flex-col justify-start *:mx-4">
+    <article className="flex md:flex-row flex-col justify-start *:mx-4 py-4">
       <a
         href={link}
         target="_blank"

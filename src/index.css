@@ -38,6 +38,35 @@ body {
   font-size: 1rem;
 }
 
+.homepage {
+  position: absolute;
+  top: 90px;
+  text-align: left;
+  margin: 0;
+}
+
+
+.homepage h1 {
+  font-family: 'Inter Variable', sans-serif;
+  color: #ce8740;
+  line-height: 1em;
+  letter-spacing: -2px;
+}
+
+.bg {
+  background: radial-gradient(at 50% 100%, #662d34 0%, #272730 40%, #171720 80%, #070710 100%);
+}
+
+.layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(63, 12, 88, 0.25) 0%, transparent 100%);
+  pointer-events: none;
+}
+
 @layer base {
   h1 {
     @apply text-2xl md:text-4xl;
@@ -62,13 +91,19 @@ body {
 @layer utilities {
 
   .header {
-    @apply flex justify-between items-center sm:px-16 px-8 py-4 max-w-5xl mx-auto absolute top-0 bg-transparent z-10 right-0 left-0;
+    @apply flex justify-between items-center sm:px-16 px-8 py-8 mx-auto absolute top-0 bg-transparent z-10 right-0 left-0;
+  }
+
+  section.spacing {
+    padding-top: 90px;
+    @apply sm:px-16 px-8 py-16 min-h-screen;
   }
 
   .title {
     font-family: "Roboto", "Helvetica", "Times New Roman", ui-serif, serif;
     font-weight: bold;
     letter-spacing: 0.1em;
+    padding-top: 20px;
   }
 
   .about_title {
