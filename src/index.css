@@ -3,8 +3,22 @@
 @tailwind utilities;
 
 :root {
-  --blue-rgb: 237 245 255;
-  --green-rgb: 125 161 35;
+  --font-color: #fff;
+  --radial-bg: radial-gradient(at 50% 100%, #662d34 0%, #272730 40%, #171720 80%, #070710 100%);
+  --logo-color: #fff;
+  --name-color: #ce8740;
+}
+
+[data-theme="dark"] {
+  --font-color: #403227;
+  /* --radial-bg: radial-gradient(at 50% 100%, #8ba0c0 0%, #4682B4 40%, #3f75a0 80%, #346b99 100%); */
+  --radial-bg: radial-gradient(at 50% 100%, #1661BE 0%, #0C7ECF 40%, #019CE0 80%, #00B9F2 100%);
+  --logo-color: #fff;
+  --name-color: #fbf2c4;
+}
+
+svg {
+  fill: var(--logo-color);
 }
 
 * {
@@ -20,7 +34,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #f3e7d4;
+  color: var(--font-color);
 }
 
 .logo {
@@ -48,17 +62,17 @@ body {
 
 .homepage h1 {
   font-family: 'Inter Variable', sans-serif;
-  color: #ce8740;
+  color: var(--name-color);
   line-height: 1em;
   letter-spacing: -2px;
 }
 
 .bg {
-  background: radial-gradient(at 50% 100%, #662d34 0%, #272730 40%, #171720 80%, #070710 100%);
+  background: var(--radial-bg);
 }
 
 .layer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;

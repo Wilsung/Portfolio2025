@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import logoImg from "../../public/favicon3.png";
 import { useState } from "react";
+import ThemeToggle from "./ThemeToggle";
 
 export default function MainNavigation() {
   const [showMenu, setShowMenu] = useState(false);
@@ -8,7 +9,6 @@ export default function MainNavigation() {
   function handleMenuClick() {
     setShowMenu((menu) => !menu);
   }
-
   return (
     <header className="header">
       <NavLink to="/" end>
@@ -19,7 +19,6 @@ export default function MainNavigation() {
             className="hover:fill-cyan-400"
             width="48"
             height="29"
-            fill="#fff"
             viewBox="0 0 48 29"
           >
             <path d="M0 0h6.5a6 6 0 0 1 5.2 3.1L19.4 17l4-9L19 0h6.5a6 6 0 0 1 5.2 3.1L39.5 19 35 29 24.5 10 16 29 0 0Zm46.7 2.8A2 2 0 0 0 45 0h-7l5.5 10 3.2-7.2Z"></path>
@@ -47,6 +46,11 @@ export default function MainNavigation() {
           <li>
             <a href="mailto:ungwpublic@gmail.com">
               <i className="fa-regular fa-envelope"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <ThemeToggle />
             </a>
           </li>
         </ul>
