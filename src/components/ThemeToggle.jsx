@@ -4,7 +4,7 @@ import svg from "../assets/icons/motion.svg";
 const ThemeToggle = () => {
   const [theme, setTheme] = useState("dark");
 
-  localStorage.setItem("theme", theme)
+  localStorage.setItem("theme", theme);
   document.documentElement.setAttribute("data-theme", theme);
 
   const toggleTheme = (e) => {
@@ -17,8 +17,14 @@ const ThemeToggle = () => {
   };
 
   return (
-    <div>
-      <img src={svg} alt="" onClick={toggleTheme} />
+    <div className="theme_button">
+      <div href="mailto:ungwpublic@gmail.com" onClick={toggleTheme}>
+        {theme === "dark" ? (
+          <i className="fa-solid fa-moon"></i>
+        ) : (
+          <i className="fa-solid fa-lightbulb"></i>
+        )}
+      </div>
     </div>
   );
 };

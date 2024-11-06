@@ -44,14 +44,18 @@ export default function MainNavigation() {
             </NavLink>
           </li>
           <li>
-            <a href="mailto:ungwpublic@gmail.com">
-              <i className="fa-regular fa-envelope"></i>
-            </a>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) => (isActive ? "active" : undefined)}
+            >
+              Contact
+            </NavLink>
           </li>
+          {/* <li>
+            <a href="mailto:ungwpublic@gmail.com">Contact</a>
+          </li> */}
           <li>
-            <a href="">
-              <ThemeToggle />
-            </a>
+            <ThemeToggle />
           </li>
         </ul>
       </nav>
@@ -68,7 +72,7 @@ export default function MainNavigation() {
               className="fixed inset-0 bg-gray-800 opacity-25"
               onClick={handleMenuClick}
             ></button>
-            <nav className="fixed top-0 right-0 bottom-0 flex flex-col w-4/6 max-w-sm py-6 px-6 bg-[#0F2027] border-r overflow-y-auto">
+            <nav className="fixed top-0 right-0 bottom-0 flex flex-col w-4/6 max-w-sm py-6 px-6 bg-[#0F2027] border-r overflow-y-auto text-center">
               <div className="flex items-center mb-8">
                 <NavLink className="mr-auto" to="/" end>
                   <i className="fa-solid fa-house"></i>
@@ -98,10 +102,11 @@ export default function MainNavigation() {
                 </NavLink>
 
                 <a href="mailto:ungwpublic@gmail.com">
-                  <li>
-                    <i className="fa-regular fa-envelope"></i> Contact Me
-                  </li>
+                  <li>Contact</li>
                 </a>
+                <li className="text-center">
+                  <ThemeToggle />
+                </li>
               </ul>
             </nav>
           </>

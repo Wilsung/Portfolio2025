@@ -6,6 +6,7 @@ import HomePage from "./pages/HomePage";
 import RootLayout from "./pages/RootLayout";
 import AboutMePage from "./pages/AboutMe";
 import ProjectsPage from "./pages/Projects.jsx";
+import Contact from "./pages/Contact.jsx";
 
 // const BlogPage = lazy(() => import("./pages/Blog"));
 // const PostPage = lazy(()=> import('./pages/Post'));
@@ -31,6 +32,15 @@ const router = createBrowserRouter([
           {
             index: true,
             element: <ProjectsPage />,
+          },
+        ],
+      },
+      {
+        path: "contact",
+        children: [
+          {
+            index: true,
+            element: <Contact />,
           },
         ],
       },

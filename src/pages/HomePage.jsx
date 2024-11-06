@@ -68,9 +68,9 @@ export default function HomePage() {
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
-          autoRotateSpeed={1}
+          autoRotateSpeed={0.7}
         />
-        <Stars radius={250} depth={100} count={1000} factor={10} />
+        <Stars radius={900} depth={80} count={1000} factor={25} />
       </Canvas>
       <div className="layer" />
     </section>
