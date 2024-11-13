@@ -7,7 +7,8 @@
   --color2: #2a82cf;
   --font-color: #fff;
   /* --radial-bg: radial-gradient(at 50% 100%, #8ba0c0 0%, #4682B4 40%, #3f75a0 80%, #346b99 100%); */
-  --radial-bg: radial-gradient(at 50% 100%, #b2d5ff 0%, #2a82cf 40%, #4492d6 80%, #44b8e6 100%);
+  /* --radial-bg: radial-gradient(at 50% 100%, #b2d5ff 0%, #2a82cf 40%, #4492d6 80%, #5454f0 100%); */
+  --radial-bg: radial-gradient(at 50% 100%, #9494f3 0%, #5252b9 40%, #3838c0 80%, #2d2dcf 100%);
   --logo-color: #fff;
   --name-color: #E5E3B3;
   --title-color: #efefef;
@@ -165,8 +166,7 @@ form {
   }
 
   section.spacing {
-    padding-top: 90px;
-    @apply sm:px-16 px-8 py-24 min-h-screen;
+    @apply sm:px-16 px-8 pt-[6.3rem] min-h-screen;
   }
 
   .title {

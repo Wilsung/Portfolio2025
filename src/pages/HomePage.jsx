@@ -4,6 +4,7 @@ import { React3D } from "../models/React3D";
 import { Suspense, useState } from "react";
 import { OrbitControls, Stars, PerspectiveCamera } from "@react-three/drei";
 import Rocket from "../models/Rocket";
+import Cloud from "../models/Cloud";
 
 export default function HomePage() {
   const [isRotating, setIsRotating] = useState(false);
@@ -61,6 +62,7 @@ export default function HomePage() {
         </PerspectiveCamera>
         <Suspense fallback={<Loader />}>
           <Rocket scale={rocketScale} position={rocketPosition} />
+          {/* <Cloud /> */}
         </Suspense>
         <OrbitControls
           autoRotate

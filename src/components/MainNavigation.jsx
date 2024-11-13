@@ -16,7 +16,7 @@ export default function MainNavigation() {
         <div>
           <svg
             aria-hidden="true"
-            className="hover:fill-cyan-400"
+            className="hover:fill-slate-500"
             width="48"
             height="29"
             viewBox="0 0 48 29"
