@@ -1,5 +1,4 @@
 import { useState } from "react";
-import svg from "../assets/icons/motion.svg";
 
 const ThemeToggle = () => {
   const [theme, setTheme] = useState("dark");

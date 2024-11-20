@@ -1,10 +1,10 @@
 import { Canvas } from "@react-three/fiber";
 import Loader from "../components/Loader";
-import { React3D } from "../models/React3D";
+
 import { Suspense, useState } from "react";
 import { OrbitControls, Stars, PerspectiveCamera } from "@react-three/drei";
 import Rocket from "../models/Rocket";
-import Cloud from "../models/Cloud";
+
 
 export default function HomePage() {
   const [isRotating, setIsRotating] = useState(false);

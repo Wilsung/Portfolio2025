@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import logoImg from "../../public/favicon3.png";
 import { useState } from "react";
 import ThemeToggle from "./ThemeToggle";
 
