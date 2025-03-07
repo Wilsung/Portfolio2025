@@ -1,36 +1,24 @@
-import { Canvas } from "@react-three/fiber";
-import Loader from "../components/Loader";
+<!DOCTYPE html>
+<html lang="en">
 
-import { Suspense, useState } from "react";
-import { OrbitControls, Stars, PerspectiveCamera } from "@react-three/drei";
-import Rocket from "../models/Rocket";
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="favicon.ico?" rel="icon" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Nanum+Pen+Script&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/2a20f3910e.js" crossorigin="anonymous">
+  </script>
 
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <title>Sharon Yi</title>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2315817749206359"
+     crossorigin="anonymous"></script>
+</head>
 
-export default function HomePage() {
-  const [isRotating, setIsRotating] = useState(false);
-
-
-  const adjustRocketForScreenSize = () => {
-    let screenScale, screenPosition;
-
-    // If screen width is less than 768px, adjust the scale and position
-    if (window.innerWidth < 768) {
-      screenScale = 6.3;
-      screenPosition = [0, -10, 0];
-    } else {
-      screenScale = 6.9;
-      screenPosition = [0, -12, 0];
-    }
-
-    return [screenScale, screenPosition];
-  };
-
-
-  const [rocketScale, rocketPosition] = adjustRocketForScreenSize();
-
-  return (
-
-<article>
+<body>
   <div class="headerBg wrapper">
     <nav role="navigation">
       <div class="menu-toggle"><span>Menu</span></div>
@@ -55,7 +43,7 @@ export default function HomePage() {
           <span class="smallerText">(sometimes)</span> with a passion for
           creating engaging, entertaining user experiences. ✨
         </p>
-        {/* <p><span class="smallerText">Psst! My portfolio is a WIP so viewing on desktop is the best for now!</span></p> */}
+        <!-- <p><span class="smallerText">Psst! My portfolio is a WIP so viewing on desktop is the best for now!</span></p> -->
       </div>
       <div class="imageContainer">
         <img src="assets/avatar.png" alt="" />
@@ -72,7 +60,7 @@ export default function HomePage() {
           <video autoplay loop muted playsinline class="videoOne">
             <source src="assets/one.mp4" type="video/mp4" />
           </video>
-          {/* <img src="assets/one.jpg" alt="" class="imageOne hideDesktop" /> */}
+          <!-- <img src="assets/one.jpg" alt="" class="imageOne hideDesktop" /> -->
           <div class="overlayOne">
             <i class="fas fa-times fa-2x closeOverlayOne hideDesktop"></i>
             <h3>Habit Tracker</h3>
@@ -98,7 +86,7 @@ export default function HomePage() {
           <video autoplay loop muted playsinline class="videoTwo">
             <source src="assets/two.mp4" type="video/mp4" />
           </video>
-          {/* <img src="assets/two.jpg" alt="" class="imageOne hideDesktop" /> */}
+          <!-- <img src="assets/two.jpg" alt="" class="imageOne hideDesktop" /> -->
 
           <div class="overlayTwo">
             <i class="fas fa-times fa-2x closeOverlayTwo hideDesktop"></i>
@@ -128,7 +116,7 @@ export default function HomePage() {
           <video autoplay loop muted playsinline class="videoThree">
             <source src="assets/three.mp4" type="video/mp4" />
           </video>
-          {/* <img src="assets/three.jpg" alt="" class="imageOne hideDesktop" /> */}
+          <!-- <img src="assets/three.jpg" alt="" class="imageOne hideDesktop" /> -->
 
           <div class="overlayThree">
             <i class="fas fa-times fa-2x closeOverlayThree hideDesktop"></i>
@@ -159,7 +147,7 @@ export default function HomePage() {
           <video autoplay loop muted playsinline class="videoFour">
             <source src="assets/four.mp4" type="video/mp4" />
           </video>
-          {/* <img src="assets/four.jpg" alt="" class="imageOne hideDesktop" /> */}
+          <!-- <img src="assets/four.jpg" alt="" class="imageOne hideDesktop" /> -->
 
           <div class="overlayFour">
             <i class="fas fa-times fa-2x closeOverlayFour hideDesktop"></i>
@@ -284,54 +272,6 @@ export default function HomePage() {
   <script>
     AOS.init();
   </script>
-</article>
+</body>
 
-    // <section className="w-full h-screen bg">
-    //   <div className="homepage sm:px-16 px-8 py-4">
-    //     <p>Hi, my name is</p>
-    //     <h1 className="py-1 md:py-2 text-4xl md:text-6xl title">Wilson Ung</h1>
-    //     <h2 className="text-slate-300 font-bold">Front-End Web Developer.</h2>
-    //     <p className="text-base sm:text-lg md:text-xl py-1">
-    //       I enjoy coding engaging digital experiences.
-    //     </p>
-    //   </div>
-    //   <Canvas
-    //     linear
-    //     shadows
-    //   >
-    //     <ambientLight intensity={0.75} />
-    //     <PerspectiveCamera makeDefault position={[10, 0, 16]} fov={60}>
-    //       <pointLight intensity={1} position={[-10, -25, -10]} />
-    //       <spotLight
-    //         castShadow
-    //         intensity={2.25}
-    //         angle={0.2}
-    //         penumbra={1}
-    //         position={[-25, 20, -15]}
-    //         shadow-bias={-0.0001}
-    //       />
-    //       <directionalLight position={[1, 1, 1]} intensity={2} />
-    //       <hemisphereLight
-    //         skyColor="#b1e1ff"
-    //         groundColor="#000000"
-    //         intensity={2}
-    //       />
-    //     </PerspectiveCamera>
-    //     <Suspense fallback={<Loader />}>
-    //       <Rocket scale={rocketScale} position={rocketPosition} />
-    //       {/* <Cloud /> */}
-    //     </Suspense>
-    //     <OrbitControls
-    //       autoRotate
-    //       enablePan={false}
-    //       enableZoom={false}
-    //       maxPolarAngle={Math.PI / 2}
-    //       minPolarAngle={Math.PI / 2}
-    //       autoRotateSpeed={0.7}
-    //     />
-    //     <Stars radius={900} depth={80} count={1000} factor={25} />
-    //   </Canvas>
-    //   <div className="layer" />
-    </section>
-  );
-}
+</html>
